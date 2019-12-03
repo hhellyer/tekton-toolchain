@@ -15,5 +15,12 @@ toolchain:
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
-services: {}
+services:
+  sample-tekton:
+    service_id: tektonBroker
+    parameters:
+      git_repo_url: "https://github.com/hhellyer/echo-pipeline.git",
+      git_ref": "master",
+      pipeline_path": ".",
+      namespace": "broker-pipelines"
 form: {}
