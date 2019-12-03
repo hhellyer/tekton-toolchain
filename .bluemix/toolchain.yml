@@ -11,13 +11,13 @@ template:
       [https://github.com/hhellyer/tekton-toolchain](https://github.com/hhellyer/tekton-toolchain)
     git branch: '[master](https://github.com/hhellyer/tekton-toolchain/tree/master)'
 toolchain:
-  name: 'empty-toolchain-{{timestamp}}'
+  name: 'tekton-toolchain-{{timestamp}}'
   template:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
 services:
   sample-tekton:
-    service_id: tektonpipeline
+    service_id: 'tektonpipeline'
     parameters:
       git_repo_url: 'https://github.com/hhellyer/echo-pipeline.git'
       git_ref: 'master'
