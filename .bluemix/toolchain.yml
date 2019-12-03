@@ -19,8 +19,8 @@ services:
   sample-tekton:
     service_id: tektonpipeline
     parameters:
-      git_repo_url: "https://github.com/hhellyer/echo-pipeline.git"
-      git_ref": "master"
-      pipeline_path": "."
-      namespace": "broker-pipelines"
+      git_repo_url: 'https://github.com/hhellyer/echo-pipeline.git'
+      git_ref: 'master'
+      pipeline_path: '.'
+      namespace: 'broker-pipelines'
 form: {}
