@@ -8,8 +8,8 @@ template:
     $ref: "#/messages/template.description"
   info:
     git url: >-
-      [https://github.com/open-toolchain/empty-toolchain](https://github.com/open-toolchain/empty-toolchain)
-    git branch: '[master](https://github.com/open-toolchain/empty-toolchain/tree/master)'
+      [https://github.com/hhellyer/tekton-toolchain](https://github.com/hhellyer/tekton-toolchain)
+    git branch: '[master](https://github.com/hhellyer/tekton-toolchain/tree/master)'
 toolchain:
   name: 'empty-toolchain-{{timestamp}}'
   template:
