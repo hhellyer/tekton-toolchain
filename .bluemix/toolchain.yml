@@ -16,6 +16,14 @@ toolchain:
     getting_started:
       $ref: "#/messages/template.gettingStarted"
 services:
+  sample-repo:
+    service_id: githubconsolidated
+    parameters:
+      repo_name: 'sample-{{toolchain.name}}'
+      source_repo_url: 'https://github.com/open-toolchain/cloud-native-toolchain-tutorial-app'
+      type: clone
+      has_issues: true
+      enable_traceability: true
   sample-tekton:
     service_id: 'tektonpipeline'
     parameters:
