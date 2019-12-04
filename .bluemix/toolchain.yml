@@ -24,6 +24,7 @@ services:
       type: clone
       has_issues: true
       enable_traceability: true
+      owner_id: idsdev
   sample-tekton:
     service_id: 'tektonpipeline'
     parameters:
