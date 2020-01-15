@@ -32,4 +32,8 @@ services:
       git_ref: 'master'
       pipeline_path: '.'
       namespace: 'broker-pipelines'
+      body: {
+    	  message: "Hello from OTC Tekton Broker"
+      }
+    }
 form: {}
